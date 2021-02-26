@@ -1,0 +1,139 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 30rem;
+    border-radius: 30px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 0rem 5rem;
+ 
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sneaker img {
+    width:90%;
+    height: auto;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+    -webkit-transition: all 0.75s ease-out;
+    -moz-transition: all 0.75s ease-out;
+    -ms-transition: all 0.75s ease-out;
+    -o-transition: all 0.75s ease-out;
+}
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(to right, rgba(23,30,48,0.75), rgba(39,170,201, 0.75));
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 1;
+}
+
+
+.info h1 {
+    font-size:2rem;
+}
+
+.info h3 {
+    font-size: 1.1rem;
+    padding: 0.5rem 0rem 2.5rem;
+    color:#585858;
+    font-weight: lighter;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sizes button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border:none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #585858;
+}
+
+.sizes button:hover {
+    background: lightgray;
+
+}
+
+
+button.active {
+    background: #585858;
+    color: white;
+}
+
+.purchase {
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background: #27aac9;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.purchase button:hover {
+    background: #5fb5c9;
+
+}
+
+
